@@ -1,0 +1,162 @@
+html, body{
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+    margin:0;
+    padding:0;
+    background-color:hsl(195, 100%, 7%);
+}
+#fondo{
+  width: auto;
+  background-color: white;
+  color: black;
+}
+.pedro{
+  background-color: rgba(113, 113, 113, 0.84);
+  position: fixed;
+}
+
+.header{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
+.menu-container{
+  position: fixed;        
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  animation: enlace-header linear both;
+  animation-timeline: scroll(root);
+  animation-range: 0 400px;
+}
+
+
+.logo img{
+  z-index: 11;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: relative;
+  margin: 0px 00px 00px 100px;
+}
+  
+.navbar ul li{
+  list-style-type: none;
+  position: relative;
+  float: left;
+  margin-right: 50px;
+  transition: 1s;
+}
+.navbar ul li a{
+  font-size: 22px;
+  padding: 16px;
+  color: #FFFDFC;
+  display: block;
+  font-weight: 600;
+  transition: 1s;
+}
+.navbar ul li a:hover{
+  color: #97c6f1;
+}
+
+.navbar ul li:hover{
+  transform: scale(1.4);
+  box-shadow: 10px solid #ffffff ;
+}
+
+#menu{
+  display: none;
+}
+
+.menu-icono{
+  width: 50px;
+}
+.menu label{
+  cursor: pointer;
+  display: none;
+}
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10; /* Asegura que esté encima del SVG */
+  text-align: center;
+}
+.header-content h1,
+.header-content h2 {
+  margin: 0;
+  color: #F9FAFC;
+  text-transform: uppercase;
+}
+
+.header-content h2 {
+  font-size: 26px;
+  color: #C5C5C5;
+}
+
+
+
+
+
+.informacion{
+  
+  padding: 100px 00px 00px 100px;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+
+
+
+
+.topgun{
+
+  display: block;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 150px 0px 290px;
+}
+
+.topgun img{
+  width: 400px;
+  height: 400px;
+
+}
+
+.atajo h2{
+
+  right:100px;
+}
+
+.atajo{
+  font-size: 10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  left: 10px;
+}
+
+.atajo h2{
+  
+  padding: 0px 00px 00px 00px;
+
+}
+#canvas{
+    margin:0 auto;
+    display:block;
+    filter:url('#shadowed-goo');
+}
+
+svg{
+  display:none;
+}

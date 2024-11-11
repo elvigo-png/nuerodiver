@@ -1,0 +1,180 @@
+body{
+  font-family: "Poppins", sans-serif;
+  background-color: #fee440 ;
+}
+
+
+.headera{
+  display: flex;
+  align-items: center;
+
+}
+
+
+.header{
+  position: relative;
+  background-color: #fee440 ;
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
+.menu-container{
+  position: fixed;        
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  animation: enlace-header linear both;
+  animation-timeline: scroll(root);
+  animation-range: 0 400px;
+}
+
+
+.logo img{
+  z-index: 11;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: relative;
+  margin: 0px 00px 00px 100px;
+}
+  
+.navbar ul li{
+  list-style-type: none;
+  position: relative;
+  float: left;
+  margin-right: 50px;
+  transition: 1s;
+}
+.navbar ul li a{
+  font-size: 22px;
+  padding: 16px;
+  color: #FFFDFC;
+  display: block;
+  font-weight: 600;
+  transition: 1s;
+}
+.navbar ul li a:hover{
+  color: #97c6f1;
+}
+
+.navbar ul li:hover{
+  transform: scale(1.4);
+  box-shadow: 10px solid #ffffff ;
+}
+
+#menu{
+  display: none;
+}
+
+.menu-icono{
+  width: 50px;
+}
+.menu label{
+  cursor: pointer;
+  display: none;
+}
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10; /* Asegura que esté encima del SVG */
+  text-align: center;
+}
+.header-content h1,
+.header-content h2 {
+  margin: 0;
+  color: black;
+  text-transform: uppercase;
+}
+
+.header-content h2 {
+  font-size: 26px;
+  color: black;
+}
+
+
+svg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 0;
+}
+
+
+.informacion{
+  padding: 100px 00px 00px 100px;
+  position: absolute;
+}
+
+
+
+
+.topgun{
+  display: block;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 150px 0px 290px;
+}
+
+.topgun img{
+  width: 300px;
+  height: 300px;
+}
+
+.atajo h2{
+  right:100px;
+}
+
+.atajo{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+
+  animation: enlace-header linear both;
+  animation-timeline: scroll(root);
+  animation-range:  810px 810px;
+}
+
+.atajo h2{
+  
+  padding: 0px 00px 00px 00px;
+
+}
+
+@keyframes reveal {
+  form {
+      position: fixed;
+      translate: 0 100px;    
+  }
+  to {
+      opacity: 1;
+      translate: 0 0;
+  }
+}
+
+@keyframes enlace-header {
+  to{
+      background: rgba(0, 0, 0, 0.697);
+      backdrop-filter: blur(5px);
+
+  }
+}

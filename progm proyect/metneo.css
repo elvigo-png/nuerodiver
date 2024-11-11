@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #7295df;
+    color: #F9FAFC;
+    text-transform: uppercase;
+}
+.btn-1:hover{
+    color: #97c6f1;
+}
+
+/* cabeza */
+.services{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(../img/escuelaneo22.jpg);
+        background-position: center ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+}
+.services-content{
+    text-align: center;
+}
+.services-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+
+/* formato */
+.services-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.services-1{
+    padding: 0 100px;
+}
+.services-1 img{
+    width: 25px;
+    margin-bottom: 15px;
+}
+.services-1 h3{
+    color: #b3d1ea;
+    font-size: 18px;  
+}
+
+
+/* metodo */
+.ortodoxo h1{
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.ortodoxo p{
+    font-size: 18px;
+    color: #414247;
+    margin: 25px 100px 45px 100px;
+    text-align: justify;
+}
+
+.ortodoxo{
+    padding: 100px 0;
+    text-align: center;
+}
+
+
+/* caracteristicas */
+.blog-container h2{
+    font-size: 50px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.blog-container p{
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+}
+.blog-container{
+    padding: 100px 0;
+    text-align: center;
+}
+.blog-content{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-1{
+    padding: 15px 55px;
+}
+
+.blog-1 h3{
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #323337;
+}
+
+
+/* formato */
+.services-s{
+        background-image: linear-gradient(
+            rgba(0,0,0,0.7),
+            rgba(0,0,0,0.7)),
+            url(../img/oldvsnew.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+}
+
+.metant{
+    float: left;
+    padding: 100px 00px 00px 100px;
+}
+
+.metant img{
+    width: 50%;
+    height: 200px;
+}
+
+
+.metnue{
+    float: right;
+    padding: 100px 100px 100px 00px;
+}
+
+.metnue img{
+    
+    width: 50%;
+    height: 200px;
+}
+
+
+.readmore_btn{
+    
+    background-color: #7295df;    
+    border: none;
+    border-radius: 40px;
+    color: white;    
+    padding: 15px 32px;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 10px 0px #7295df;
+    cursor: pointer;
+    position: relative;
+    left: 250px;
+}
+
+.readmore_btn:hover{
+    box-shadow: none;
+    color: #97c6f1;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
+    
+}
+
+
+
+.okarun{
+    display: none;
+    
+}
+
+.show{
+    color: #000000;
+    display: block;
+    background-color: white;
+}
+
+.show h2{
+    color: #000000;
+}
+
+.content{
+    color: none;
+}
+
+.content p{
+    font-size: 18px;
+    color: #201f1f;
+    margin-bottom: 50px;
+    padding: 0px 300px 0px 200px;
+}
+
+.content h1{
+    padding: 70px 0px 60px 250px;
+}
+
+.content h2{
+    font-size: 20px;
+    padding: 70px 0px 20px 200px;
+}
+
+
+
+
+
+
+
+.footer{
+    width: 100%;
+    background-color: #0d2033;
+    display: flex;
+}
+.footer-content{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0% 10% ;
+
+    padding: 1% 1%;
+}
+
+.footer .footer-content .link h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.footer .footer-content .link p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.footer .footer-content .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #000000;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.footer .footer-content .red-social a:hover{
+    color: #97c6f1;
+}
+
+
+/* falta responsive */
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .header{
+        min-height: 0vh;
+    }
+    .header-content{
+        padding: 100px 30px;
+    }
+    .header-content h1{
+        font-size: 55px;
+        overflow-wrap: break-word;
+    }
+    .header-content h2{
+        padding: 0;
+    }
+    .subjects{
+        padding: 30px 30px 30px 30px;
+    }
+    .subjects-content h2{
+        padding: 0;
+    }
+    .txt-p{
+        padding: 0;
+    }
+    .subjects-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .subjects-img {
+        display: none;
+    }
+    .services{
+        padding: 30px;
+    }
+    .services-content p{
+        padding: 0;
+    }
+    .services-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .services-1{
+        margin-bottom: 25px;
+    }
+    .general{
+        flex-direction: column;
+    }
+    .general-1{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    .right{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    .blog{
+        padding: 30px;
+    }
+    .blog-content{
+        flex-direction: column;
+    }
+    .blog-1{
+        padding: 0;
+    }
+    .footer-content{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}

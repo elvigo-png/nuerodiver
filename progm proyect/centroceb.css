@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    background-color: black;
+}
+
+.carga{
+    overflow-y: hidden;
+}
+
+.okarun{
+    display: none;
+}
+
+.neuro{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: start;
+    color: rgb(255, 255, 255);
+}
+
+.neuro section{
+    background-color: #ff1212;
+    position: relative;
+}
+
+
+
+
+.header{
+    position: sticky;
+}
+
+.containera{
+    width: 100%;
+    margin: 0 auto;
+}
+.menu-containera{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    animation: enlace-headerar linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 100px;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: relative;
+    margin: 0px 00px 00px 100px;
+}
+
+    
+.navbarir ul li{
+    position: relative;
+    float: left;
+    margin-right: 50px;
+    transition: 1s;
+}
+.navbarir ul li a{
+    font-size: 22px;
+    padding: 16px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 600;
+    transition: 1s;
+}
+.navbarir ul li a:hover{
+    color: #97c6f1;
+}
+
+.navbarir ul li:hover{
+    transform: scale(1.4);
+    box-shadow: 10px solid #ffffff ;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 50px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    text-align: center;
+    
+}
+.header-content h1{
+    font-size: 65px;
+    line-height: 80px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+.header-content h2{
+    font-size: 26px;
+    color: #C5C5C5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+
+@keyframes enlace-headerar {
+    to{
+        z-index: 1;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.697);
+        backdrop-filter: blur(5px);
+
+    }
+}
+
+
+.loader{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    
+}
+      
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: ease-in-out 10s;
+}
+      
+.pacman {
+        position: relative;
+        left: 14%;
+        background: transparent;
+        z-index: 1;
+}
+.pacman::before, .pacman::after {
+        position: absolute;
+        top: -35px;
+        display: block;
+        border-radius: 50%;
+        content: "";
+        height: 0px;
+        width: 0px;
+}
+.pacman::before {
+        animation: chunk-top 0.5s ease infinite;
+        border: 35px solid #FFCC00;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+}
+.pacman::after {
+        animation: chunk-bottom 0.5s ease infinite;
+        border: 35px solid #FFCC00;
+        border-right-color: transparent;
+        border-top-color: transparent;
+}
+      
+.path {
+        display: flex;
+        justify-content: space-around;
+        animation: eating-path 0.5s linear infinite;
+        width: 100%;
+        position: relative;
+        left: 16%;
+}
+.path::before {
+        background: #ffffff;
+        border-radius: 50%;
+        content: "";
+        height: 1rem;
+        width: 1rem;
+}
+
+      
+      @keyframes chunk-top {
+        0%, 100% {
+          transform: rotate(-45deg);
+        }
+        50% {
+          transform: rotate(-80deg);
+        }
+      }
+      @keyframes chunk-bottom {
+        0%, 100% {
+          transform: rotate(-40deg);
+        }
+        50% {
+          transform: rotate(0deg);
+        }
+      }
+      @keyframes eating-path {
+        0% {
+          transform: translateX(50%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+    
+.loader2{
+
+    display: none;
+    
+}
+    
+
+
+.cargado{
+    overflow-y: scroll;
+}
+
+
+
+
+/* .dentro{
+} */
+
+
+.zoom .atajo{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+
+    animation: enlace-header linear both;
+    animation-timeline: scroll(root);
+    animation-range:  390px 390px;
+}
+
+.atajo h2{
+    padding: 10px 10px;
+
+}
+
+@keyframes reveal {
+    form {
+        position: static;
+        translate: 0 100px;    
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+
+@keyframes enlace-header {
+    to{
+        background: rgba(0, 0, 0, 0.697);
+        backdrop-filter: blur(5px);
+        position: fixed;
+        width: auto;
+        top: 110px;
+    }
+}
+
+
+
+.primero{
+    background-color: rebeccapurple;
+    transition: ease-in-out 1s;
+    height: 100px;
+    width: 25%;
+
+}
+
+.zoom,.zoom2,.zoom3,.zoom4,.zoom5,.zoom6,.zoom7,.zoom8{
+    
+    width: 100%;
+    height: auto;
+    text-align: justify;
+    padding: 100px 100px 100px 100px;
+}
+
+.zoom .header{
+
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.53),
+        rgba(0, 0, 0, 0.54)),
+        url(../img/autismohead.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.zoom .header-content{
+    display: flex;
+
+    font-size: 65px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    margin-left: 29%;    
+}
+
+
+
+
+
+
+
+
+
+.segundo{
+    background-color: rebeccapurple;
+    transition: ease-in-out 1s;
+    height: 100px;
+    width: 25%;
+}
+
+.tercero{
+    background-color: rebeccapurple;
+    transition: ease-in-out 1s;
+    height: 100px;
+    width: 25%;
+}
+
+.cuarto{
+    background-color: rebeccapurple;
+    transition: ease-in-out 1s;
+    height: 100px;
+    width: 25%;
+}
+
+.quinto{
+    background-color: rebeccapurple;
+    transition: ease-in-out 1s;
+    height: 100px;
+    width: 25%;
+}
+
+.sexto{
+    background-color: rebeccapurple;
+    transition: ease-in-out 1s;
+    height: 100px;
+    width: 25%;
+}
+
+.septimo{
+    background-color: rebeccapurple;
+    transition: ease-in-out 1s;
+    height: 100px;
+    width: 25%;
+}
+
+.octavo{
+    background-color: rebeccapurple;
+    transition: ease-in-out 1s;
+    height: 100px;
+    width: 25%;
+    position: relative;
+    display: block;
+}
+
+
+.dentro{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 250px;
+}
+
+
+/* .acerca-btn{
+    background-color: #7295df;    
+    border: none;
+    border-radius: 40px;
+    color: white;    
+    padding: 15px 32px;
+    box-shadow: 0px 0px 10px 0px #7295df;
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+} */
+
+
+
+
+
+
+.primero:hover,.segundo:hover,.tercero:hover,.cuarto:hover,.quinto:hover,.sexto:hover,.septimo:hover,.octavo:hover{
+    box-shadow: 0px 0px 20px 0px #7295df;
+    transform: scale(1.04);
+}
+
+@keyframes ease-in-out{
+    100%{
+        position: fixed;
+    }
+}
+
+
+.footer{
+    width: 100%;
+    background-color: #0d2033;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.footer-content{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0% 10% ;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 1% 1%;
+}
+.footer .footer-content .link figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: none;
+    align-items: none;
+}
+.footer .footer-content .link h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.footer .footer-content .link p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.footer .footer-content .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.footer .footer-content .red-social a:hover{
+    color: #97c6f1;
+}
+
+
+
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .header{
+        min-height: 0vh;
+    }
+    .header-content{
+        padding: 100px 30px;
+    }
+    .header-content h1{
+        font-size: 55px;
+        overflow-wrap: break-word;
+    }
+    .header-content h2{
+        padding: 0;
+    }
+    .subjects{
+        padding: 30px 30px 30px 30px;
+    }
+    .subjects-content h2{
+        padding: 0;
+    }
+    .txt-p{
+        padding: 0;
+    }
+    .subjects-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .subjects-img {
+        display: none;
+    }
+    .services{
+        padding: 30px;
+    }
+    .services-content p{
+        padding: 0;
+    }
+    .services-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .services-1{
+        margin-bottom: 25px;
+    }
+    .general{
+        flex-direction: column;
+    }
+    .general-1{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    .right{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    .blog{
+        padding: 30px;
+    }
+    .blog-content{
+        flex-direction: column;
+    }
+    .blog-1{
+        padding: 0;
+    }
+    .footer-content{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+    #progress{
+        position: fixed;
+        top: 0;
+        width: 0%;
+        background: red;
+        height: 1em;
+
+        animation: progress-grow auto linear;
+        animation-timeline: scroll(root block );
+        z-index: 1;
+    }
+
+    @keyframes progress-grow {
+        form {
+            width: 0%;
+        }
+        to {width: 100%;}
+    }
+}

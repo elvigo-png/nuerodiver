@@ -1,0 +1,216 @@
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  height: 100%;
+  background: linear-gradient(#6084d7 25%, #a2cef4 50%, #a2cef4 50%, #6084d7 100%);
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  margin: 0 auto;
+  perspective: 360px;
+  perspective-origin: 50% 50%;
+}
+
+.top-plane, .bottom-plane {
+  width: 200%;
+  height: 130%;
+  position: absolute;
+  bottom: -30%;
+  left: -50%;
+  background-image: -webkit-linear-gradient(#a2cef4 2px, transparent 2px), -webkit-linear-gradient(left, #a2cef4 2px, transparent 2px);
+  background-size: 100px 100px,100px 100px;
+  background-position: -1px -1px,-1px -1px;
+  transform: rotateX(85deg);
+  animation: planeMoveTop 2s infinite linear;
+}
+
+.bottom-plane {
+  transform: rotateX(-85deg);
+  top: -30%;
+  animation: planeMoveBot 2s infinite linear;
+}
+
+@keyframes planeMoveTop {
+  from {
+    background-position: 0px -100px,0px 0px;
+  }
+  to {
+    background-position: 0px 0px, 100px 0px;
+  }
+}
+@keyframes planeMoveBot {
+  from {
+    background-position: 0px 0px,0px 0px;
+  }
+  to {
+    background-position: 0px -100px, 100px 0px;
+  }
+}
+@media (max-height: 350px) {
+  .wrap {
+    perspective: 210px;
+  }
+}
+
+
+
+
+
+
+.header{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
+.menu-container{
+  position: fixed;        
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  animation: enlace-header linear both;
+  animation-timeline: scroll(root);
+  animation-range: 0 400px;
+}
+
+
+.logo img{
+  z-index: 11;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: relative;
+  margin: 0px 00px 00px 100px;
+}
+  
+.navbar ul li{
+  list-style-type: none;
+  position: relative;
+  float: left;
+  margin-right: 50px;
+  transition: 1s;
+}
+.navbar ul li a{
+  font-size: 22px;
+  padding: 16px;
+  color: #FFFDFC;
+  display: block;
+  font-weight: 600;
+  transition: 1s;
+}
+.navbar ul li a:hover{
+  color: #97c6f1;
+}
+
+.navbar ul li:hover{
+  transform: scale(1.4);
+  box-shadow: 10px solid #ffffff ;
+}
+
+#menu{
+  display: none;
+}
+
+.menu-icono{
+  width: 50px;
+}
+.menu label{
+  cursor: pointer;
+  display: none;
+}
+.header-content {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10; /* Asegura que esté encima del SVG */
+  text-align: center;
+}
+.header-content h1,
+.header-content h2 {
+  margin: 0;
+  color: black;
+  text-transform: uppercase;
+}
+
+.header-content h2 {
+  font-size: 26px;
+  color: black;
+}
+
+
+
+
+
+.informacion{
+  padding: 100px 00px 00px 100px;
+
+}
+
+
+
+
+.topgun{
+  display: block;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 150px 0px 290px;
+}
+
+.atajo h2{
+  right:100px;
+}
+
+.atajo{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+
+  animation: enlace-header linear both;
+  animation-timeline: scroll(root);
+  animation-range:  810px 810px;
+}
+
+.atajo h2{
+  
+  padding: 0px 00px 00px 00px;
+
+}
+
+@keyframes reveal {
+  form {
+      position: fixed;
+      translate: 0 100px;    
+  }
+  to {
+      opacity: 1;
+      translate: 0 0;
+  }
+}
+
+@keyframes enlace-header {
+  to{
+      background: rgba(0, 0, 0, 0.697);
+      backdrop-filter: blur(5px);
+  }
+}
